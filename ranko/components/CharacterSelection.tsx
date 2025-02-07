@@ -189,6 +189,7 @@ export default function CharacterSelection({ characters, nickname, gameId, onRep
         {currentPair && (
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             {currentPair.map((character, index) => (
+              // console.log(index),
               <motion.div
                 key={character.name}
                 initial={{ opacity: 0, y: 20 }}
