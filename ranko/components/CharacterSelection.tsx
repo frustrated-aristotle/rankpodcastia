@@ -115,7 +115,7 @@ export default function CharacterSelection({ characters, nickname, gameId, onRep
 
   const shareOnTwitter = () => {
     const text = `${currentGame ? currentGame.title: ""} : ${winner?.name}! Seninki ne?`
-    const url = "https://charminggames.com" // Replace with your actual website URL
+    const url = "https://rankpodcastia.vercel.app/" // Replace with your actual website URL
     window.open(
       `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
       "_blank",
