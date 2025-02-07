@@ -25,6 +25,8 @@ export default function NicknameForm({ onSubmit }: NicknameFormProps) {
       transition={{ duration: 0.5 }}
       className="w-full"
     >
+     <div className="wrapper flex justify-center items-center min-h-screen">
+
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-xl font-bold text-purple-800 mb-4">Takma Adını Gir</h2>
         <input
@@ -34,16 +36,17 @@ export default function NicknameForm({ onSubmit }: NicknameFormProps) {
           className="w-full px-4 py-2 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
           placeholder="Takma adın"
           required
-        />
+          />
         <motion.button
           type="submit"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="mt-4 w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 transition-colors duration-300"
-        >
+          >
           Oyunu Başlat
         </motion.button>
       </form>
+          </div>
     </motion.div>
   )
 }

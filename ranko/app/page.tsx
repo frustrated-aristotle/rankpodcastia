@@ -3,8 +3,8 @@ import GameCard from "@/components/GameCard"
 
 const games = [
   { id: "irritating", title: "En İtici Karakter", image: "/irritating.jpg" },
-  { id: "fav", title: "En Sevdiğin NPC", image: "/fav.jpg" },
-  { id: "intoxicating", title: "En Kafa Açan NPC", image: "/talk.jpg" },
+  // { id: "fav", title: "En Sevdiğin NPC", image: "/fav.jpg" },
+  // { id: "intoxicating", title: "En Kafa Açan NPC", image: "/talk.jpg" },
 ]
 
 export default function Home() {
