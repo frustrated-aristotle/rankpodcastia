@@ -2,7 +2,7 @@
   "env": {
     "NEXT_PUBLIC_SUPABASE_URL": "https://knzziykbbujcwkdoszzy.supabase.co",
     "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuenppeWtiYnVqY3drZG9zenp5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg5MjE0OTQsImV4cCI6MjA1NDQ5NzQ5NH0.ZPV3Iaj_3YKHGcmKKDMzNkdSmOPPJjZr9MI0u6Of77E",
-    "DISABLE_ESLINT": true
+    "DISABLE_ESLINT": "true"
   }
   
 }
