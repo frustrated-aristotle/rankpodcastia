@@ -1,14 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "@typescript-eslint/no-explicit-any": ["off"],
-   "no-unused-vars": ["error", {
-            "vars": "all",
-            "args": "after-used",
-            "caughtErrors": "all",
-            "ignoreRestSiblings": false,
-            "reportUsedIgnorePattern": false
-        }]
+    "@typescript-eslint/no-explicit-any": ["off"]
   }
   
 }
