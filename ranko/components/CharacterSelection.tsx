@@ -126,8 +126,8 @@ export default function CharacterSelection({ characters, nickname, gameId, onRep
     return (
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl mx-auto">
         <div className="bg-white p-8 rounded-lg shadow-lg text-center w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-purple-800 mb-6">Tebrikler, {nickname}!</h2>
-          <p className="text-xl text-purple-600 mb-6">Mükemmel {gameId} karakterin:</p>
+          <h2 className="text-3xl font-bold text-purple-800 mb-6">Heeyyoo!</h2>
+          <p className="text-xl text-purple-600 mb-6">{currentGame?.title} karakterin:</p>
           <div className="mb-8">
             <img
               src={winner.image || "/placeholder.svg"}
