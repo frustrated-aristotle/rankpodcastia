@@ -24,9 +24,9 @@ export default function CharacterSelection({ characters, nickname, gameId, onRep
   const [stats, setStats] = useState<{ winner: string; count: number; last_selected: string }[]>([])
   const [initialized, setInitialized] = useState(false) // Track if the pair has been initialized
   const games = [
-    { id: "irritating", title: "En İtici Karakter", image: "/irritating.jpg" },
-    { id: "fav", title: "En Sevdiğin NPC", image: "/fav.jpg" },
-    { id: "intoxicating", title: "En Kafa Açan NPC", image: "/talk.jpg" },
+    { id: "irritating", title: "En İtici Karakter", end:"En itici bulduğum Podcastia karakteri ", image: "/irritating.jpg" },
+    { id: "favnpc", title: "En Sevdiğin NPC",end: "Podcastia'da en sevdiğim NPC ", image: "/fav.jpg" },
+    { id: "intoxicating", title: "En Kafa Açan NPC", end:"En kafa açan Podcastia karakteri ", image: "/talk.jpg" },
   ]
   const currentGame = games.find(game => game.id === gameId)
 
@@ -114,7 +114,7 @@ export default function CharacterSelection({ characters, nickname, gameId, onRep
   };
 
   const shareOnTwitter = () => {
-    const text = `${currentGame ? currentGame.title: ""} : ${winner?.name}! Seninki ne?`
+    const text = `${currentGame ? currentGame.end: ""} : ${winner?.name}! Seninki ne?`
     const url = "https://rankpodcastia.vercel.app/" // Replace with your actual website URL
     window.open(
       `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
